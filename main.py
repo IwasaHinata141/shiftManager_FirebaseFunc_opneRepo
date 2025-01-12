@@ -19,9 +19,9 @@ from firebase_functions.firestore_fn import (
 )
 
 
-cred = credentials.Certificate('shiftmaker-fee68-firebase-adminsdk-9c2ic-b503fe46e1.json')
+cred = credentials.Certificate('SERVICE_ACCOUNT_KEY_JSON_FILE')
 firebase_admin.initialize_app(cred, {
-    'storageBucket': 'gs://shiftmaker-fee68.appspot.com'
+    'storageBucket': 'FOLDER_PASS'
 })
 
 db = firestore.client()
